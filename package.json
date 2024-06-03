@@ -1,6 +1,6 @@
 {
   "name": "jest-do-it",
-  "private": true,
+  "private": false,
   "version": "1.0.0",
   "workspaces": {
     "packages": [
@@ -12,6 +12,9 @@
     "build:core": "yarn workspace @jest-do-it/core build",
     "build:react": "yarn workspace @jest-do-it/react build",
     "build": "yarn build:core && yarn build:react",
+    "publish:core": "yarn workspace @jest-do-it/core publish",
+    "publish:react": "yarn workspace @jest-do-it/react publish",
+    "publish": "yarn publish:core && yarn publish:react",
     "test:core": "yarn workspace @jest-do-it/core test",
     "test:react": "yarn workspace @jest-do-it/react test",
     "test": "yarn test:core && yarn test:react"
